@@ -1,0 +1,235 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: facebook;
+    src: url(../fonts/klavika.otf);
+}
+
+.center{
+    max-width: 1100px;
+    padding: 0 2%;
+    margin: 0 auto;
+}
+
+.clear{
+    clear: both;
+}
+
+header{
+    padding: 8px 0;
+
+    color: white;
+    background-color: #3665af;
+}
+
+div.logo{    
+    font-family: facebook, sans-serif;
+    float: left;
+    margin-top: 10px;
+}
+
+div.logo h2{
+    font-size: 25px;
+    font-weight: lighter;
+}
+
+form{
+    float: right;
+}
+
+div.form-element{
+    display: inline-block;
+}
+
+div.form-element span{
+    font-size: 12px;
+}
+
+div.form-element input{
+    display: block;
+}
+
+div.form-element input[type=email],
+div.form-element input[type=password]{
+    margin-top: 2px;
+}
+
+div.form-element input[type=submit]{
+    width: 45px;
+    height: 25px;
+
+    cursor: pointer;
+    border: 0;
+    background: #1969e5;
+    border: 2px solid #215ab2;
+    color: white;
+    padding: 3px 5px;
+    font-size: 12px;
+}
+
+div.form-element input[type=submit]:hover{
+    background: #215ab2;
+}
+
+form > span{
+    display: block;
+    max-width: 100px;
+    position: relative;
+    left: 45%;
+
+    font-size: 12px;
+}
+
+section.main{
+    background: linear-gradient(white, #D3D8E8);
+    padding: 40px 0;
+}
+
+div.map{
+    width: 60%;
+    float: left;
+}
+
+div.img-mapa img{
+    max-width: 100%;
+}
+
+section.main div.center p{
+    width: 50%;
+    font-size: 16px;
+
+    font-family: facebook;
+    font-weight: bold;
+}
+
+div.cadastrar{
+    width: 40%;
+    float: right;
+}
+
+div.cadastrar h2{
+    font-size: 30px;
+}
+
+form.cadastrar{
+    float: left;
+}
+
+form.cadastrar input[type=text],
+form.cadastrar input[type=password]{
+    height: 35px;
+    padding: 5px;
+
+    border: 1px solid #a5dcff;
+    border-radius: 5px;
+}
+
+div.element-register:nth-child(2) input,
+div.element-register:nth-child(3) input{
+    width: 100%;
+}
+
+form.cadastrar div{
+    margin: 10px 0;
+}
+
+div.cadastrar h3{
+    font-weight: lighter;
+}
+
+select.nascimento{
+    float: left;
+
+    margin-top: 5px;
+}
+
+div.sexo{
+    margin: 10px 10px;
+}
+
+div.sexo label{
+    font-size: 16px;
+    margin-right: 10px;
+}
+
+div.sexo input{
+    width: 8px;
+}
+
+div.cadastrar > p{
+    width: 70% !important;
+    font-size: 11px !important;
+    font-weight: lighter !important;
+}
+
+div.cadastrar input[type=submit]{   
+    width: 150px; 
+    height: 25px;
+    background: linear-gradient(#67ae55, #578843);
+    color: white;
+    cursor: pointer;
+    border: 0;
+    font-size: 14px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+section.linguas{
+    padding: 30px 0;
+    background-color: white;
+}
+
+section.linguas a{
+    color: #365899;
+    text-decoration: none;
+    padding-right: 10px;
+    font-size: 14px;
+}
+
+section.linguas a.selected{
+    color: #737373;
+}
+
+section.linguas > .center{
+    padding: 0 8px 0 8px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+section.linguas > .center > button{
+    width: 20px;
+    height: auto;
+
+    background-color: #f5f6f7;
+    border: 1px solid #ccd0d5;
+    color: #4b4f56;
+    cursor: pointer;
+
+    font-weight: bold;
+    font-size: 14px;
+}
+
+section.linguas > .center > button:hover{
+    background-color: #dddedf;
+}
+
+footer a{
+    color: #365899;
+    text-decoration: none;
+    padding-right: 18px;
+    font-size: 15px;
+}
+
+footer > .center{
+    padding: 0;
+}
+
+footer span{
+    display: block;
+    font-size: 12px;
+    margin-top: 30px;
+}
