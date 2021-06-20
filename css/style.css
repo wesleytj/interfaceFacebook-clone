@@ -143,7 +143,7 @@ div.cadastrar h3{
 
 select.nascimento{
     float: left;
-
+    padding: 3px;
     margin-top: 5px;
 }
 
@@ -232,4 +232,158 @@ footer span{
     display: block;
     font-size: 12px;
     margin-top: 30px;
+}
+
+@media screen and (max-width: 768px){
+    .logo{
+        width: 100%;
+        text-align: center;
+        float: none;
+        margin: 0 !important;
+    }
+
+    section.main{
+        height: 500px;
+    }
+
+    form.form-login{
+        width: 100%;
+        text-align: center;
+    }
+
+    form.form-login > div.form-element{
+        margin-top: 10px;
+        position: relative;
+    }
+
+    div.form-element > span{
+        position: absolute;
+        left: 0;
+    }
+
+    form.form-login > div.form-element:nth-child(1) > input,
+    form.form-login > div.form-element:nth-child(2) > input{
+        margin-top: 14px;
+    }
+
+    form.form-login > div.form-element:nth-child(3){
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    div.form-element input[type=submit]{
+        margin: 0 auto;
+        width: 150px;
+        height: 30px;
+    }
+
+    form.form-login > span{
+        width: 100%;
+        max-width: none;
+        position: static;
+    }
+
+    div.map{
+        display: none;
+    }
+
+    div.cadastrar{
+        float: none;
+        width: 100%;
+        text-align: center;
+    }
+
+    div.cadastrar form{
+        width: 100%;
+    }
+
+    div.cadastrar form input{
+        max-width: 365px;
+    }
+
+    div.select-nasc{
+        width: 100%;
+        height: 35px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }    
+
+    div.cadastrar p{
+        margin: 0 auto;
+    }
+}
+
+@media screen and (max-width: 381px){
+    section.main{
+        height: 570px;
+    }
+
+    form.cadastrar > div.element-register:nth-child(1) > input{
+        width: 100%;
+        max-width: none;
+        margin: 5px 0;
+    }
+}
+
+@media screen and (max-width: 364px){
+    div.form-element input[type=submit],
+    div.form-element input[type=email],
+    div.form-element input[type=password]{
+        width: 100%;
+        max-width: 173px;
+    }
+
+}
+
+@media screen and (max-width: 224px) {
+    section.main{
+        height: 620px;
+    }
+}
+
+@media screen and (max-width: 208px){
+    section.main{
+        height: 760px;
+    }
+
+    div.select-nasc{
+        flex-direction: column;
+        height: 100px;
+    }
+
+    select.nascimento{
+        float: none;
+        width: 100%;
+        max-width: 150px;
+    }
+
+    div.sexo{
+        position: relative;
+        height: 50px;
+    }
+
+    div.sexo input[type=radio]{
+        display: block;
+        margin: 10px 0;
+        margin-left: 30px;
+    }
+
+    div.sexo label{
+        position: absolute;
+        top: 0;
+        left: 45px;
+    }
+
+    div.sexo label:nth-child(4){
+        margin-top: 20px;
+    }
+    
+    footer .center{
+        width: 90%;
+    }
+
+    footer span{
+        text-align: center;
+    }
 }
