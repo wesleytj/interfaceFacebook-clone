@@ -1,3 +1,25 @@
+<!-- VERIFICAR CADASTRO -->
+<?php
+    $pdo = new PDO('mysql:host=localhost;dbname=facebook_clone','root','');
+
+    if(isset($_POST['acao'])){
+        $nome = $_POST['nome'];
+        $sobrenome = $_POST['sobrenome'];
+        $login = $_POST['cel-email'];
+        $senha = $_POST['senha'];
+        $dia = $_POST['dia-nasc'];
+        $mes = $_POST['mes-nasc'];
+        $ano = $_POST['ano-nasc'];
+        $sexo = $_POST['sexo'];
+
+        $sql = $pdo -> prepare("INSERT INTO `executelogin` VALUES (null,?,?)");
+
+        $sql -> execute(array($email,$senha));
+    
+        echo '<h1 style="display: block; width: 100%; padding: 10px 0; background-color: green;">Cadastro realizado com sucesso!</h1>';
+    }
+?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -57,7 +79,7 @@
                 <h2>Abra uma conta.</h2>
                 <h4>É gratuito e sempre será.</h4>
 
-                <form class="cadastrar" action="">
+                <form class="cadastrar" action="" method="post">
                     <div class="element-register">
                         <input type="text" name="nome" id="" placeholder="Nome">
                         <input type="text" name="sobrenome" id="" placeholder="Sobrenome">
